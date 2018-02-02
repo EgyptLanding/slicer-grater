@@ -48,9 +48,9 @@
 
 #mainSlide{
     background-color: white;
-    background-image: url("assets/img/back41.png");
+    background-image: url("../img/back41.png");
     background-repeat: no-repeat;
-    background-size:100% 110%;
+    background-size:100% 105%;
 }
 
 .logo1{
@@ -101,7 +101,7 @@
     justify-content: center;
 }
 
-@media (max-width: 978px) {
+@media (max-width: 885px) {
     .mainText {
         padding: 35px;
         margin: 0;
@@ -123,7 +123,7 @@
     #orderNavBtn>a{
         color: lightseagreen !important;
     }
-    .myNavbar1{
+    .myNavbar2{
         background-color:rgba(0,0,0,0.7);
     }
 
@@ -158,7 +158,7 @@
 .row-3 .ser-col-4{border-right:solid 1px #ccc;}
 
 
-@media (max-width:768px){
+@media (max-width:885px){
     .ser-col-4-l{border-right:solid 1px #ccc;border-bottom: solid 1px #ccc;border-left:solid 1px #ccc;}
     .ser-col-4{border-left:solid 1px #ccc;border-bottom: solid 1px #ccc;}
 }
