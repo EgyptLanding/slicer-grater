@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/mystyles.css">
 
-    <script type="text/javascript" src="assets/js/myjs.js"></script>
 
 </head>
 
@@ -66,9 +65,9 @@ overflow-x: hidden;">
                     </li>
                     <li><a href="#screens">Closer Look</a>
                     </li>
-                    <li><a href="#reviews">Reviews</a>
+                    <li><a href="#service">Free Delivery</a>
                     </li>
-                    <li id="orderNavBtn"><a href="#order">ORDER</a>
+                    <li><a href="#reviews">Reviews</a>
                     </li>
                 </ul>
             </div>
@@ -90,32 +89,42 @@ overflow-x: hidden;">
                 </h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-offset-3 col-md-6" style="text-align: center;">
-                <h4 class="hidden-xs"><p>Do not injure hands or waste a precious time for wearisome
-                    process.<br/>
-                    Every housewife loves neatly and fast sliced vegetables!</p>
-                </h4>
-            </div>
-        </div>
         <section class="row wrap">
 
-            <div class="col-md-4 col-sm-4 col-xs-12 mainText  scrollpoint sp-effect3 video">
+            <div class="col-md-4 col-sm-4 col-xs-12 scrollpoint sp-effect3 video" style="padding-top:50px;">
                 <video onclick="toggleVideo()" muted controls autoplay loop id="myVideo">
                     <source src="assets/video1.mp4" type="video/mp4">
                 </video>
             </div>
 
             <div class="col-md-4 col-sm-4 col-xs-12 image">
+                <h4 class="hidden-xs" style="text-align: center;"><p>Do not injure hands or waste a precious time for wearisome
+                    process.<br/>
+                    Every housewife loves neatly and fast sliced vegetables!</p>
+                </h4>
+
                 <img id="mainPhoto" class="hideMe scrollpoint sp-effect3" style="height: 100%; width: 100%;"
                      src="assets/img/product1flippedtrans15.png" alt="">
             </div>
 
-            <div class="col-md-4 col-sm-4 col-xs-12 mainText scrollpoint sp-effect2 order">
-
-                <form role="form">
-                    <div  class="form-group" >
-                        <p><b style="padding-left: 10px;">Order now and wait for our call</b></p>
+            <div class="col-md-4 col-sm-4 col-xs-12  scrollpoint sp-effect2 order" style="text-align: center;" >
+                <div id="clockdiv">
+                    <div>
+                        <span class="hours"></span>
+                        <div class="smalltext">HOURS</div>
+                    </div>
+                    <div>
+                        <span class="minutes"></span>
+                        <div class="smalltext">MINUTES</div>
+                    </div>
+                    <div>
+                        <span class="seconds"></span>
+                        <div class="smalltext">SECONDS</div>
+                    </div>
+                </div>
+                <form role="form" id="orderForm">
+                    <div  class="form-group" style="text-align: center;">
+                           <b style="color: red;"> HURRY UP & ORDER NOW</b>
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Name">
@@ -436,7 +445,10 @@ overflow-x: hidden;">
 
     <footer style="text-align: center; height: 150px; padding-bottom: 100px; padding-top: 20px;">
         <a style="color: whitesmoke;" href="#mainSlide"><i class="fa fa-arrow-up fa-4x"></i></a>
+
     </footer>
+
+
 
 
 </div>
@@ -451,6 +463,7 @@ overflow-x: hidden;">
         appMaster.preLoader();
     });
 </script>
+<script type="text/javascript" src="assets/js/myjs.js"></script>
 </body>
 
 </html>

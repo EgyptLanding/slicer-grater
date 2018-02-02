@@ -129,6 +129,12 @@
 
 }
 
+#orderForm{
+    background-color:rgba(100,255,255,0.2);
+    border-radius: 40px;
+    padding: 5px 10px 5px 10px;
+}
+
 
 #mainPhoto{
     margin-bottom: 5px;
@@ -190,4 +196,38 @@
     .video { order: 1; }
     .order { order: 2; }
     .image { order: 3; }
+}
+
+
+/* counter */
+#clockdiv{
+    font-family: sans-serif;
+    color: red;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 22px;
+    background-color:rgba(100,255,255,0.2);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 10px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    padding-left: 15px;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.smalltext{
+    color: black;
+    padding-top: 5px;
+    font-size: 12px;
 }
