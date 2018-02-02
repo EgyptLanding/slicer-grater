@@ -92,12 +92,9 @@ overflow-x: hidden;">
         <section class="row wrap">
 
             <div class="col-md-4 col-sm-4 col-xs-12 scrollpoint sp-effect3 video" style="padding-top:50px;">
-                <video onclick="toggleVideo()" controls autoplay loop id="myVideo">
+                <video onclick="toggleVideo()" preload="auto" controls autoplay loop id="myVideo">
                     <source src="assets/video1.mp4" type="video/mp4">
                 </video>
-                <script>
-                    document.getElementById('myVideo').play();
-                </script>
             </div>
 
             <div class="col-md-4 col-sm-4 col-xs-12 image">
@@ -467,6 +464,7 @@ overflow-x: hidden;">
     $(document).ready(function () {
         appMaster.preLoader();
     });
+    document.getElementById('myVideo').play();
 </script>
 <script type="text/javascript" src="assets/js/myjs.js"></script>
 </body>
