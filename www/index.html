@@ -1,0 +1,466 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html lang="en" class="no-js ie6"><![endif]-->
+<!--[if IE 7]>
+<html lang="en" class="no-js ie7"><![endif]-->
+<!--[if IE 8]>
+<html lang="en" class="no-js ie8"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slicer and Grater</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <!-- Bootstrap 3.3.2 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/js/rs-plugin/css/settings.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="mystyles.css">
+
+
+    <script type="text/javascript" src="assets/js/modernizr.custom.32033.js"></script>
+    <script type="text/javascript" src="myjs.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body style="overflow-y: scroll;
+overflow-x: hidden;">
+
+<div class="pre-loader">
+    <div class="load-con">
+        <img src="../../Bootstrap%20themes/Oleose-master/assets/img/freeze/logo.png" class="animated fadeInDown" alt="">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+</div>
+
+<header>
+    <nav class="navbar navbar-fixed-top myNavbar1 myNavbar2" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="fa fa-bars fa-lg"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <a class="navbar-brand" href="#mainSlide">
+                        <img src="assets/img/logo3.png" class="d-inline-block align-top logo1" id="logo2" alt="">
+                    </a>
+                </ul>
+                <ul class="nav navbar-nav navbar-right navBtns">
+                    <li><a href="#features">Features</a>
+                    </li>
+                    <li><a href="#screens">Closer Look</a>
+                    </li>
+                    <li><a href="#demo"><i class="fa fa-video-camera" aria-hidden="true"></i> &nbsp;Video</a>
+                    </li>
+                    <li><a href="#reviews">Reviews</a>
+                    </li>
+                    <li id="orderNavBtn"><a href="#order">ORDER</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-->
+    </nav>
+
+
+    <!--RevSlider-->
+    <div class="container-fluid" id="mainSlide" style="margin-top: 0">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4 mainText scrollpoint sp-effect2">
+                <h1 class="hidden-md hidden-lg">
+                    <b>Slicer and Grater</b>
+                </h1>
+                <h1>
+                    <b>The Multi Purpose Tool</b>
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6" style="text-align: center;">
+                <h4 class="hidden-xs"><p>Do not injure hands or waste a precious time for wearisome
+                    process.<br/>
+                    Every housewife loves neatly and fast sliced vegetables!</p>
+                </h4>
+            </div>
+        </div>
+        <section class="row wrap">
+            <div class="col-md-4 col-sm-4 col-xs-12 mainText scrollpoint sp-effect2 order">
+                <p><b style="padding-left: 10px;">Order now and wait for our call.</b></p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="phone" class="form-control" placeholder="Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control"
+                                  placeholder="City"></input>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Order</button>
+                </form>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 mainText scrollpoint sp-effect2 video">
+                <video onclick="toggleVideo()" controls autoplay loop id="myVideo">
+                    <source src="assets/video1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 image">
+                <img id="mainPhoto" class=" hideMe scrollpoint sp-effect3" style="height: 100%; width: 100%;"
+                     src="assets/img/product1flippedtrans15.png" alt="">
+            </div>
+        </section>
+    </div>
+
+
+</header>
+
+
+<div class="wrapper">
+
+
+    <section id="features" style="background: whitesmoke;">
+        <div class="container">
+            <div class="section-heading scrollpoint sp-effect3">
+                <h1>Features</h1>
+                <div class="divider"></div>
+                <p>Slicer and Grater</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 scrollpoint sp-effect1">
+                    <div class="media text-right feature">
+                        <a class="pull-right" href="#features">
+                            <i class="fa fa-check fa-2x"></i>
+                        </a>
+                        <div class="media-body">
+                            <h3 class="media-heading">Easy to Use</h3>
+                            Simple that even your child can help you
+                        </div>
+                    </div>
+                    <div class="media text-right feature">
+                        <a class="pull-right" href="#features">
+                            <i class="fa fa-check fa-2x"></i>
+                        </a>
+                        <div class="media-body">
+                            <h3 class="media-heading">Various blades</h3>
+                            Stainless steel ultra sharp blades
+                        </div>
+                    </div>
+                    <div class="media text-right feature">
+                        <a class="pull-right" href="#features">
+                            <i class="fa fa-check fa-2x"></i>
+                        </a>
+                        <div class="media-body">
+                            <h3 class="media-heading">100% Safe</h3>
+                            Safety pusher to keep your hands away from blades
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <img style="width: 100%; height: 100%;" src="assets/img/product5tr.png"
+                         class="img-responsive scrollpoint sp-effect5" alt="">
+                </div>
+                <div class="col-md-4 col-sm-4 scrollpoint sp-effect2">
+                    <div class="media feature">
+                        <a class="pull-left" href="#features">
+                            <i class="fa fa-check fa-2x"></i>
+                        </a>
+                        <div class="media-body">
+                            <h3 class="media-heading">Easy to clean</h3>
+                            All pieces are detachable for easy cleaning
+                        </div>
+                    </div>
+                    <div class="media feature">
+                        <a class="pull-left" href="#features">
+                            <i class="fa fa-check fa-2x"></i>
+                        </a>
+                        <div class="media-body">
+                            <h3 class="media-heading">No hard work</h3>
+                            1 round gives 12 times of cutting
+                        </div>
+                    </div>
+                    <div class="media feature">
+                        <a class="pull-left" href="#features">
+                            <i class="fa fa-check fa-2x"></i>
+                        </a>
+                        <div class="media-body">
+                            <h3 class="media-heading">Removable Parts</h3>
+                            All parts of Slicer and Grater are easy to remove
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="screens">
+        <div class="container">
+
+            <div class="section-heading scrollpoint sp-effect3">
+                <h1>Take a closer look</h1>
+                <div class="divider"></div>
+                <p></p>
+            </div>
+
+            <!--<div class="filter scrollpoint sp-effect3">-->
+            <!--<a href="javascript:void(0)" class="button js-filter-all active">All Screens</a>-->
+            <!--<a href="javascript:void(0)" class="button js-filter-one">User Access</a>-->
+            <!--<a href="javascript:void(0)" class="button js-filter-two">Social Network</a>-->
+            <!--<a href="javascript:void(0)" class="button js-filter-three">Media Players</a>-->
+            <!--</div>-->
+
+            <div class="slider filtering scrollpoint sp-effect5">
+                <div class="one">
+                    <img class="slideImagesRes" style="padding-bottom: 17%; padding-top: 17%;" src="assets/img/slicerResult3.jpg" alt="">
+                    <h4>Cucumber, Potato and Tomato</h4>
+                </div>
+                <div class="one">
+                    <img class="slideImagesRes" style="padding-bottom: 17%; padding-top: 17%;" src="assets/img/slicerResult4.jpg" alt="">
+                    <h4>Chocolate </h4>
+                </div>
+                <div class="one">
+                    <img class="slideImagesRes" style="padding-bottom: 17%; padding-top: 17%;" src="assets/img/slicerResult1.jpg" alt="">
+                    <h4>Great for cheese</h4>
+                </div>
+                <div class="one">
+                    <img class="slideImagesRes" style="padding-bottom: 17%; padding-top: 17%;" src="assets/img/slicerResult2.jpg" alt="">
+                    <h4>Make healthier living fun and easy</h4>
+                </div>
+                <div class="one">
+                    <img class="slideImages" src="assets/img/product7.jpg" alt="">
+                    <h4>Take a look from different angels</h4>
+                </div>
+                <div class="one">
+                    <img class="slideImages" src="assets/img/product5tr.png" alt="">
+                    <h4>A tool that lasts for a lifetime</h4>
+                </div>
+                <div class="two">
+                    <img class="slideImages" src="assets/img/product3.jpg" alt="">
+                    <h4>Makes your life easier and faster</h4>
+                </div>
+                <div class="three">
+                    <img class="slideImages" src="assets/img/product2.jpg" alt="">
+                    <h4>Very useful various blades</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="service">
+        <div class="section-heading scrollpoint sp-effect3" style="margin-top: 0px;">
+            <h1>What do we offer</h1>
+            <div class="divider"></div>
+
+        </div>
+        <div class="container scrollpoint sp-effect1">
+            <div class="row row-1">
+                <div class="col-md-4 ser-col-4">
+                    <div class="ser-col ser-1">
+                        <div class="icon-col">
+                            <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+                        </div>
+                        <h2 style="padding-top:20px;">Instant call-back</h2>
+                        <p>As soon as you fill in the online form we will call you back </p>
+                        <span class="circle hidden-xs">
+            <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            </span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ser-col-4">
+                    <div class="ser-col ser-2">
+                        <div class="icon-col">
+                            <i class="fa fa-truck" aria-hidden="true"></i>
+                        </div>
+                        <h2 style="padding-top:20px;">Free Delivery</h2>
+                        <p style="padding-bottom:20px;">We have a free delivery all over Kuwait</p>
+                        <span class="circle hidden-xs">
+            <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            </span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ser-col-4-l">
+                    <div class="ser-col ser-3">
+                        <div class="icon-col">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        </div>
+                        <h2>Shipping in 24 hours</h2>
+                        <p style="padding-bottom: 20px;">Instant delivery after your confirmation</p>
+                    </div>
+                </div>
+            </div>
+            <!--=====row 1============-->
+
+            <!--====row 2============-->
+            <div class="row row-2">
+                <div class="col-md-4 ser-col-4" style="border-bottom: 0;">
+                    <div class="ser-col ser-4">
+                        <div class="icon-col">
+                            <i class="fa fa-money" aria-hidden="true"></i>
+                        </div>
+                        <h2>Cash on Delivery</h2>
+                        <p>Pay only when you receive your package</p>
+                        <span class="circle hidden-xs">
+            </span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ser-col-4" style="border-bottom: 0;">
+                    <div class="ser-col ser-5">
+                        <div class="icon-col">
+                            <i class="fa fa-exchange" aria-hidden="true"></i>
+                        </div>
+                        <h2>Easy exchange</h2>
+                        <p>change the product within 7 days if you received a faulty product</p>
+                        <span class="circle hidden-xs">
+            </span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ser-col-4-l" style="border-bottom: 0;">
+                    <div class="ser-col ser-6">
+                        <div class="icon-col">
+                            <i class="fa fa-check-square" aria-hidden="true"></i>
+                        </div>
+                        <h2>Test before Shipping</h2>
+                        <p>All our products are carefully tested before shipping it to you</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section style=" background: white; padding-bottom: 0; margin-bottom: 0;" id="demo">
+        <div class="row">
+            <div class="col-md-12 scrollpoint sp-effect2">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="container">
+            <div class="section-heading inverse scrollpoint sp-effect3">
+                <h1>Reviews</h1>
+                <div class="divider"></div>
+                <p>Read What's The People Are Saying About Slicer and Grater</p>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-push-1 scrollpoint sp-effect3">
+                    <div class="review-filtering">
+                        <div class="review">
+                            <div class="row">
+                                <div class="col-md-offset-1 col-md-10">
+                                        <img src="assets/img/review1.png" alt=""
+                                             class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review rollitin">
+                                <div class="row">
+                                    <div class="col-md-offset-1 col-md-10">
+                                        <img src="assets/img/review2.png" alt=""
+                                             class="img-responsive">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="review rollitin">
+                            <div class="row">
+                                <div class="col-md-offset-1 col-md-10">
+                                    <img src="assets/img/review3.png" alt=""
+                                         class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="doublediagonal">
+        <div class="container">
+            <div class="section-heading scrollpoint sp-effect3">
+                <h1>Order Now</h1>
+                <div class="divider"></div>
+                <p>Please, Fill in the form and we will call you back..</p>
+            </div>
+
+                    <div class="row">
+                        <div class="col-md-8 col-sm-8 scrollpoint sp-effect1">
+                            <form role="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Number">
+                                </div>
+                                <div class="form-group">
+                                        <textarea cols="30" rows="10" class="form-control"
+                                                  placeholder="City"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </form>
+                        </div>
+                        <div class="col-md-4 col-sm-4 scrollpoint sp-effect1">
+                            <img  style="height: 100%; width: 100%;"
+                                 src="assets/img/product1flippedtrans15.png" alt="">
+                        </div>
+
+                    </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; height: 150px; padding-bottom: 100px; padding-top: 20px;">
+           <a style="color: whitesmoke;" href="#mainSlide"><i class="fa fa-arrow-up fa-4x"></i></a>
+    </footer>
+
+
+</div>
+
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/placeholdem.min.js"></script>
+<script src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script>
+    $(document).ready(function () {
+        appMaster.preLoader();
+    });
+</script>
+</body>
+
+</html>
