@@ -68,37 +68,40 @@ overflow-x: hidden;">
 
 
     <!--RevSlider-->
-    <div class="container-fluid" id="mainSlide" style="margin-top: 0;">
+    <div class="container-fluid" id="mainBlock" style="margin-top: 0; padding-bottom: 10px;">
         <div class="row">
-            <div class="col-md-offset-4 col-md-4 mainText scrollpoint sp-effect2" style="padding-left: 0; padding-right: 0;">
+            <div class="col-md-offset-1 col-md-10 mainText scrollpoint sp-effect2" style="padding-bottom:20px; padding-left: 0; padding-right: 0;">
                 <h1 class="hidden-md hidden-lg">
                     <b>Slicer and Grater</b>
                 </h1>
                 <h1>
-                    <b>The Multi Purpose <br/>Tool</b>
+                    <b style="color: black;">The Multi Purpose Tool</b>
                 </h1>
+                    <h2 class="hidden-xs" style="text-align: center; color: black;">
+                        How not to injure hands or waste a precious time for wearisome
+                            process ? <br/>
+                    </h2>
             </div>
         </div>
         <section class="row wrap">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="desktop-wrapper">
+                                <iframe id="myVideo" width="560" height="315" src="assets/video1.mp4" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+            <div class="col-md-offset-1 col-md-5 col-sm-4 col-xs-12  scrollpoint sp-effect2 order" id="firstForm" style="text-align: center; padding: 0px 30px 10px 0px;" >
+                <div id="str" class="orderText">
+                </div>
+                 <div>
+                    <form style="padding-top: 0 !important;" id="form" class="topBefore" >
+                        <input id="name" type="text" placeholder="NAME..">
+                        <input id="email" type="text" placeholder="Number..">
+                        <input id="message" type="text" placeholder="City.."></input>
+                        <input id="submit" type="submit" value="ORDER NOW !">
 
-            <div class="col-md-4 col-sm-4 col-xs-12 scrollpoint sp-effect3 video" style="padding-top:50px;">
-                <video onclick="toggleVideo()" preload="auto" muted controls autoplay loop id="myVideo">
-                    <source src="assets/video1.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <div class="col-md-4 col-sm-4 col-xs-12 image">
-                <h4 class="hidden-xs" style="text-align: center;"><p>Do not injure hands or waste a precious time for wearisome
-                    process.<br/>
-                    Every housewife loves neatly and fast sliced vegetables!</p>
-                </h4>
-
-                <img id="mainPhoto" class="hideMe scrollpoint sp-effect3" style="height: 100%; width: 100%;"
-                     src="assets/img/product1flippedtrans15.png" alt="">
-            </div>
-
-            <div class="col-md-4 col-sm-4 col-xs-12  scrollpoint sp-effect2 order" style="text-align: center;" >
-                <div id="clockdiv">
+                    </form>
+                </div>
+                <div id="clockdiv" style="padding-bottom: 0;">
                     <div>
                         <span class="hours"></span>
                         <div class="smalltext">HOURS</div>
@@ -112,24 +115,7 @@ overflow-x: hidden;">
                         <div class="smalltext">SECONDS</div>
                     </div>
                 </div>
-                <form role="form" id="orderForm">
-                    <div  class="form-group" style="text-align: center;">
-                           <b style="color: red;"> LIMITED OFFER, &nbsp;&nbsp;ORDER NOW</b>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="phone" class="form-control" placeholder="Number">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control"
-                               placeholder="City"></input>
-                    </div>
-                    <div style="text-align: center;">
-                        <button type="submit" class="btn btn-primary btn-lg">ORDER</button>
-                    </div>
-                </form>
+
             </div>
 
 
@@ -142,6 +128,17 @@ overflow-x: hidden;">
 
 <div class="wrapper">
 
+    <div id="mainSlide">
+        <div class="row">
+        <div class="col-md-6 col-sm-12" id="secondText">
+            <h1 style="border-bottom: 2px solid lightgray; padding-bottom: 10px;"><span style="color: black;">Slicer and Grater</span><br/><br/>Every housewife loves neatly<br/> and fast sliced vegetables!</h1>
+        </div>
+            <div class="col-md-6 col-sm-12">
+                <img id="mainPhoto" class="hideMe scrollpoint sp-effect3"
+                     src="assets/img/product1flippedtrans15.png" alt="">
+            </div>
+        </div>
+    </div>
 
     <section id="features" style="background: whitesmoke;">
         <div class="container">
@@ -409,22 +406,15 @@ overflow-x: hidden;">
             </div>
 
             <div class="row">
-                <div class="col-md-8 col-sm-8 scrollpoint sp-effect1">
-                    <form role="form">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Number">
-                        </div>
-                        <div class="form-group">
-                                        <textarea cols="30" rows="10" class="form-control"
-                                                  placeholder="City"></textarea>
-                        </div>
-                        <div style="text-align: center;">
-                            <button type="submit" class="btn btn-primary btn-lg">ORDER</button>
-                        </div>
-                    </form>
+                <div class="col-md-8 col-sm-8 scrollpoint sp-effect1" style="padding-top: 4%;">
+                    <div>
+                        <form style="padding-top: 0 !important;" id="form" class="topBefore" >
+                            <input id="name" type="text" placeholder="NAME..">
+                            <input id="email" type="text" placeholder="Number..">
+                            <input id="message" type="text" placeholder="City.."></input>
+                            <input id="submit" type="submit" value="ORDER NOW !">
+                        </form>
+                    </div>
                 </div>
                 <div class="col-md-4 col-sm-4 scrollpoint sp-effect1">
                     <img  style="height: 100%; width: 100%;"
@@ -436,7 +426,7 @@ overflow-x: hidden;">
     </section>
 
     <footer style="text-align: center; height: 150px; padding-bottom: 100px; padding-top: 20px;">
-        <a style="color: whitesmoke;" href="#mainSlide"><i class="fa fa-arrow-up fa-4x"></i></a>
+        <a style="color: whitesmoke;" href="#mainBlock"><i class="fa fa-arrow-up fa-4x"></i></a>
 
     </footer>
 
@@ -454,7 +444,6 @@ overflow-x: hidden;">
     $(document).ready(function () {
         appMaster.preLoader();
     });
-    document.getElementById('myVideo').play();
 </script>
 <script type="text/javascript" src="assets/js/myjs.js"></script>
 </body>

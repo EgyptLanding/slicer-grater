@@ -16,14 +16,19 @@
     }
 
     // video click start play :
-    function toggleVideo() {
-        var vid = document.getElementById("myVideo");
-        if(vid.paused){
-            vid.play();
-        }else{
-            vid.pause();
-        }
-    }
+
+    document.getElementById("myVideo").contentWindow.document.body.onclick = function () {
+        $('iframe').contents().find('video').each(function ()
+        {
+            console.log('test');
+            if(this.paused){
+                this.play();
+            }else{
+                this.pause();
+            }
+
+        });
+    };
 
     // timer :
 
@@ -74,3 +79,15 @@
 
     var deadline = new Date().addHours(5);
     initializeClock('clockdiv', deadline);
+
+    // text animation :
+
+
+    var string = "LIMITED OFFER, ONLY 14 KWD INSTEAD OF 29";
+    var str = string.split("");
+    var el = document.getElementById('str');
+
+    (function animate() {
+        str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running);
+        var running = setTimeout(animate, 100);
+    })();

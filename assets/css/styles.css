@@ -587,19 +587,20 @@ section::after {
   transition: all 0.25s ease-in-out;
 }
 form .form-control {
-  -webkit-box-shadow: none;
+  -webkit-box-shadow:gray;
   -moz-box-shadow: none;
   box-shadow: none;
   -webkit-border-radius: 5em;
   -moz-border-radius: 5em;
   -ms-border-radius: 5em;
   -o-border-radius: 5em;
-  border-radius: 5em;
+  border-radius: 3em;
   height: 40px;
-  line-height: 40px;
+  width: 100%;
+  line-height: 50px;
   padding: 10px 20px;
-  color: #cfcfcf;
-  border: 2px solid #cccccc;
+  color: black;
+  border: 2px solid black;
   font-weight: 300;
 }
 form textarea.form-control {
