@@ -114,7 +114,7 @@
     }
 
     #firstForm{
-        padding-right:0px !important;
+        padding:15px!important;
     }
 
     #mainPhoto{
@@ -369,8 +369,8 @@ input {
 }
 
 input:hover {
-    background: #b3aca7;
-    color: white;
+    background: whitesmoke;
+    color: black;
 }
 
 
@@ -397,7 +397,7 @@ input:hover {
 }
 
 .orderText{
-    font-size: 1.6em;
+    font-size: 1.4em;
     color: red;
     padding-bottom: 6px;
     font-weight: bolder;
