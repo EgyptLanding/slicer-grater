@@ -102,7 +102,7 @@
     justify-content: center;
 }
 
-@media (max-width: 885px) {
+@media (max-width: 760px) {
     .mainText {
         padding: 35px;
         margin: 0;
@@ -409,5 +409,5 @@ input:hover {
     align-items: center;
     justify-content: center;
     color: black;
-    padding-top: 20%;
+    padding-top: 15%;
 }

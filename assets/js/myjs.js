@@ -83,11 +83,11 @@
     // text animation :
 
 
-    var string = "LIMITED OFFER, ONLY 14 KWD INSTEAD OF 29";
+    var string = "Slicer and Grater";
     var str = string.split("");
     var el = document.getElementById('str');
 
     (function animate() {
         str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running);
-        var running = setTimeout(animate, 100);
+        var running = setTimeout(animate, 130);
     })();
