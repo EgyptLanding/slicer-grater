@@ -54,6 +54,7 @@
 }
 
 
+
 .logo1{
     border: none;
 }
@@ -107,6 +108,12 @@
         padding: 35px;
         margin: 0;
     }
+    #mainBlock{
+        height: 1000px;
+        background-image: url("../img/33.png");
+        background-size:100% 100%;
+    }
+
 
     .img-responsive{
         height: 70px;
@@ -442,6 +449,7 @@ input:hover {
         padding-left: 0 !important;
         padding-right: 1vh !important;
     }
+
     #textPhone{
         display: inline-block;
     }
