@@ -22,12 +22,16 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.css">
 
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/mystyles.css">
 
 
 </head>
+
+
+
 
 <body style="overflow-y: scroll;
 overflow-x: hidden;">
@@ -71,7 +75,6 @@ overflow-x: hidden;">
     <div class="container-fluid" id="mainBlock" style="margin-top: 0; padding-bottom: 10px;">
         <div class="row">
             <div class="col-md-offset-1 col-md-10 mainText scrollpoint sp-effect2" style="padding-bottom:20px; padding-left: 0; padding-right: 0;">
-                <br/>
                 <h1 class="hidden-md hidden-lg">
                     <b>Slicer and Grater</b>
                 </h1>
@@ -83,32 +86,20 @@ overflow-x: hidden;">
                         How not to injure hands or waste a precious time for wearisome
                             process ?
                     </h2>
-                <br/>
+                <div  class="orderText">
+                    LIMITED OFFER ! ONLY<span style="color: green; font-size: larger;"> 14 KWD</span> INSTEAD OF <s>29</s>
+                </div>
             </div>
         </div>
         <section class="row wrap" style="height: 100%; text-align: center; ">
-                        <div class="col-md-4 col-sm-12" style="padding-top:8.9%; padding-right: 30px;">
+                        <div class="col-md-6 col-xs-12 col-sm-12" style="padding-right: 30px;">
                             <div>
-                                <iframe id="myVideo" width="560" height="315" src="assets/video1.mp4" frameborder="0" allowfullscreen></iframe>
+                                <video id="myVideo" autoplay muted controls style="width: 100%" src="assets/video1.mp4" frameborder="0" allowfullscreen></video>
                             </div>
                         </div>
-            <div class="col-md-offset-2 col-md-6 col-sm-12 col-xs-12  scrollpoint sp-effect2 order" id="firstForm" style="text-align: center; padding: 0px 30px 50px 30px;" >
-                <div  class="orderText">
-                    HURRY UP, ONLY<span style="color: green; font-size: larger;"> 14 KWD</span> INSTEAD OF <s>29</s>
-                </div>
-                <div id="clockdiv" style="padding-bottom: 0;">
-                    <div>
-                        <span class="hours"></span>
-                        <div class="smalltext">HOURS</div>
-                    </div>
-                    <div>
-                        <span class="minutes"></span>
-                        <div class="smalltext">MINUTES</div>
-                    </div>
-                    <div>
-                        <span class="seconds"></span>
-                        <div class="smalltext">SECONDS</div>
-                    </div>
+            <div class="col-md-6 col-sm-12 col-xs-12  scrollpoint sp-effect2 order" id="firstForm" style="text-align: center !important; padding: 0px 30px 50px 30px;" >
+                <div class="row" style="height: 10px !important; text-align: center !important; padding: 10px!important;">
+                    <div id="clock" class='your-clock'> </div>
                 </div>
                 <div>
                     <form style="padding-top: 0 !important;" id="form" class="topBefore" >
@@ -454,6 +445,21 @@ overflow-x: hidden;">
     $(document).ready(function () {
         appMaster.preLoader();
     });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
+<script>
+    $(window).load(function(){
+        Date.prototype.addHours= function(h){
+            this.setHours(this.getHours()+h);
+            return this;
+        }
+        var timespan = countdown(new Date(), new Date().addHours(5),  countdown.SECONDS);
+        var clock = $('.your-clock').FlipClock(timespan.seconds, {
+            countdown:true,
+            clockFace: 'HourlyCounter'
+        });
+    })
 </script>
 <script type="text/javascript" src="assets/js/myjs.js"></script>
 </body>

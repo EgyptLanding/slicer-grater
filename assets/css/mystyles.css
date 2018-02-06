@@ -47,7 +47,7 @@
     height: 100%;
     width: 100%;
     background-color:rgba(0,0,0,0.2) ;
-    background-image: url("../img/17.png");
+    background-image: url("../img/33.png");
     background-color: white;
     background-repeat: no-repeat;
     background-size:100% 110%;
@@ -407,7 +407,9 @@ input:hover {
     color: red;
     padding-bottom: 6px;
     font-weight: bolder;
+    text-align: center;
     padding-bottom: 20px;
+    background: rgba(255,255,255,.4);
 }
 
 #secondText{
@@ -422,4 +424,50 @@ input:hover {
     border-top: 10px solid black;
     border-radius: 10px;
     border-bottom:2px solid black;
+}
+
+/*clock*/
+
+#clock{
+    padding-left: 7vh;
+    font-size:larger;
+    font-weight: 600;
+}
+#textPhone{
+    display: none;
+}
+@media (max-width:700px) { /*700 or smaller*/
+    #clock{
+        font-size:1em;
+        padding-left: 0 !important;
+        padding-right: 1vh !important;
+    }
+    #textPhone{
+        display: inline-block;
+    }
+    .flip-clock-wrapper{
+        text-align: center;
+    }
+    .flip-clock-label{
+        padding-right: 30px !important;
+    }
+
+    .flip.play{
+        display: inline-block;
+        width:5% !important;
+    }
+    .flip{
+        display: none;
+    }
+    .inn{
+        color: white !important;
+        font-size: .7em !important;
+    }
+}
+
+@media (min-width:425px) { /* 425 or bigger */
+    .flip{
+        display: inline-block;
+        width:10% !important;
+    }
 }
