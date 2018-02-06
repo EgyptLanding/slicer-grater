@@ -47,7 +47,7 @@
     height: 100%;
     width: 100%;
     background-color:rgba(0,0,0,0.2) ;
-    background-image: url("../img/back41.png");
+    background-image: url("../img/17.png");
     background-color: white;
     background-repeat: no-repeat;
     background-size:100% 110%;
@@ -229,9 +229,10 @@
 
 #clockdiv div > span{
     padding: 10px;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 5px;
     display: inline-block;
+    background: white;
 }
 
 .smalltext{
@@ -271,6 +272,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
     color: #bbb5af;
+    background: white;
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
@@ -350,7 +352,7 @@ body {
 
 input {
     font-family: 'Lato', sans-serif;
-    font-size: 1em;
+    font-size: 2em;
     width: 100%;
     height: 50px;
     padding: 0px 15px 0px 15px;
@@ -359,7 +361,7 @@ input {
     outline: none;
     color: black;
 
-    border: solid 1px black;
+    border: solid 5px black;
     border-bottom: none;
 
     transition: all 0.3s ease-in-out;
@@ -368,8 +370,12 @@ input {
     -ms-transition: all 0.3s ease-in-out;
 }
 
+::placeholder{
+    color:black !important;
+}
+
 input:hover {
-    background: whitesmoke;
+    background: white;
     color: black;
 }
 
@@ -397,7 +403,7 @@ input:hover {
 }
 
 .orderText{
-    font-size: 1.4em;
+    font-size: 2.5em;
     color: red;
     padding-bottom: 6px;
     font-weight: bolder;
@@ -410,4 +416,10 @@ input:hover {
     justify-content: center;
     color: black;
     padding-top: 15%;
+}
+
+#myVideo{
+    border-top: 10px solid black;
+    border-radius: 10px;
+    border-bottom:2px solid black;
 }
