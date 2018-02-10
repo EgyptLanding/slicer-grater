@@ -83,12 +83,14 @@
     color: black;
     text-align: left;
     font-weight: 700;
+    font-size: 4vw;
 }
 
 .mainText>h2{
     color: black;
     text-align: left;
     font-weight: 700;
+    font-size: 3vw;
 }
 
 .mainText>h3{
@@ -125,12 +127,15 @@
         color: black;
         text-align: center;
         font-weight: 700;
+        white-space: nowrap;
+        font-size: 6vh;
     }
 
     .mainText>h2{
         color: black;
         text-align: center;
         font-weight: 700;
+        font-size: 5vh;
     }
 
     .mainText>h3{
