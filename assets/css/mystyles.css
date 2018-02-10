@@ -4,6 +4,14 @@
     border-radius: 5px;
     border: 5px solid whitesmoke;
 }
+#orderNowbtn{
+    background:dodgerblue;
+    margin-bottom: 30px;
+}
+#learnMoreBtn{
+    background:dodgerblue;
+    margin-bottom: 30px;
+}
 
 
 .content {
@@ -155,7 +163,27 @@
     }
 
     #mainPhoto{
-        margin-bottom: 35px;
+        margin-bottom: 0 !important;
+        padding-top: 0 !important;
+    }
+    #orderNowbtn{
+        width:50%;
+        font-size:5vw;
+        display: block;
+        float: left;
+        padding-left: 5%;
+        font-weight: bold;
+        background:dodgerblue;
+    }
+    #learnMoreBtn{
+        text-align:center;
+        width:50%;
+        font-size:5vw;
+        display: block;
+        padding-left: 8%;
+        font-weight: bold;
+        float: right;
+        background:dodgerblue;
     }
 
     #logo2{
@@ -379,6 +407,7 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 
 body {
     font-family: 'Lato', sans-serif;
+    margin-top: 20px;
 }
 
 
@@ -478,6 +507,10 @@ input:hover {
         font-size:1em;
         padding-left: 0 !important;
         padding-right: 1vh !important;
+    }
+    body {
+        font-family: 'Lato', sans-serif;
+        margin-top: 0px;
     }
 
     #textPhone{
