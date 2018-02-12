@@ -304,9 +304,9 @@ body{
 
 @media screen and (max-width: 480px) {
     .wrap  { display: flex; flex-direction: column; }
-    .video { order: 1; }
-    .order { order: 2; }
-    .image { order: 3; }
+    .hurryUp { order: 1; }
+    .firstForm{ order: 2; }
+
 }
 
 
