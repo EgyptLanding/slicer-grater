@@ -13,6 +13,14 @@
     margin-bottom: 30px;
 }
 
+#price{
+    border:1px solid whitesmoke; padding:2px;color:blue;
+    margin: 3px;
+    margin-top: 4px;
+    background: whitesmoke;
+    border-radius: 10px;
+}
+
 
 .content {
     position: fixed;
@@ -125,7 +133,15 @@
         background-repeat: no-repeat;
         background-size:100% 110%;
     }
+    #firstOrderForm{
+        margin: 23px;
+    }
 
+    #firstOrderSec{
+        margin: 0!important;
+        width: 100%;
+        padding: 0 !important;
+    }
     .mainText{
         padding: 35px;
         text-align: center;
@@ -136,7 +152,7 @@
         text-align: center;
         font-weight: 700;
         white-space: nowrap;
-        font-size: 10vh;
+        font-size: 6vh;
     }
 
     .mainText>h2{
@@ -215,8 +231,9 @@
     border: 2px solid darkgrey;
     border-radius: 10px;
     padding: 15px;
-    margin: 12px;
 }
+
+
 
 #firstOrderForm div>input{
     border-color: darkgrey;
