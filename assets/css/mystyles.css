@@ -136,14 +136,14 @@
         text-align: center;
         font-weight: 700;
         white-space: nowrap;
-        font-size: 6vh;
+        font-size: 10vh;
     }
 
     .mainText>h2{
         color: black;
         text-align: center;
         font-weight: 700;
-        font-size: 5vh;
+        font-size: 6vh;
     }
 
     .mainText>h3{
@@ -209,6 +209,20 @@
     border-radius: 40px;
     border: 5px solid black;
     padding: 15px 10px 5px 10px;
+}
+
+#firstOrderForm{
+    border: 2px solid darkgrey;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 12px;
+}
+
+#firstOrderForm div>input{
+    border-color: darkgrey;
+}
+#firstOrderForm div>textarea{
+    border-color: darkgrey;
 }
 
 
@@ -308,165 +322,7 @@
 
 /* for video frame */
 
-div.desktop-wrapper {
-    position: relative;
-    padding-top: 25px;
-    padding-bottom: 67.5%;
-    height: 0;
-}
-div.desktop-wrapper iframe {
-    box-sizing: border-box;
-    background: url(http://img01.deviantart.net/05b6/i/2011/030/8/5/apple_led_cinema_screen_by_fisshy94-d38e3o5.png) center center no-repeat;
-    background-size: contain;
-    padding: 3.4% 10.8% 18.6%;/* 11.9% 15.5% 14.8% */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
-/*form styles*/
-
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-}
-
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-    color: #bbb5af;
-    background: white;
-}
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-}
-
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-    color: #bbb5af;
-}
-
-input::placeholder, textarea::placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-}
-
-input:focus::placeholder, textarea::focus:placeholder {
-    color: #bbb5af;
-}
-
-input::-ms-placeholder, textarea::-ms-placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-}
-
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-    color: #bbb5af;
-}
-
-/* on hover placeholder */
-
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
-    color: #e2dedb;
-    font-size: 0.875em;
-}
-
-input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
-    color: #cbc6c1;
-}
-
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-    color: #e2dedb;
-    font-size: 0.875em;
-}
-
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-    color: #cbc6c1;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
-    color: #e2dedb;
-    font-size: 0.875em;
-}
-
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-    color: #cbc6c1;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
-    color: #e2dedb;
-    font-size: 0.875em;
-}
-
-input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
-    color: #cbc6c1;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-    margin-top: 20px;
-}
-
-
-#form {
-    padding: 0;
-    width: 100%;
-}
-
-input {
-    font-family: 'Lato', sans-serif;
-    font-size: 2em;
-    width: 100%;
-    height: 50px;
-    padding: 0px 15px 0px 15px;
-
-    background: transparent;
-    outline: none;
-    color: black;
-
-    border: solid 5px black;
-    border-bottom: none;
-
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-}
-
-::placeholder{
-    color:black !important;
-}
-
-input:hover {
-    background: white;
-    color: black;
-}
-
-
-
-#submit {
-    width: 100%;
-
-    padding: 0;
-    margin: 0px 0px 0px 0px;
-
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5em;
-    color: red;
-
-    outline:none;
-    cursor: pointer;
-    background: black;
-    border: solid 1px black;
-}
-
-#submit:hover {
-    color: red;
-    background: white;
-}
 
 .orderText{
     font-size: 2.5em;
