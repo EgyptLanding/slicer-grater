@@ -125,7 +125,9 @@ body{
 }
 
 @media (max-width: 760px) {
-
+    #orderNav{
+        color: black !important;
+    }
     #mainSlide{
         height: 100%;
         width: 100%;
