@@ -314,5 +314,12 @@ body{
     color: black;
     font-size: 5vh;
     font-weight: bold;
+    padding-bottom: 0!important;  }
+
+#counter2{
+    color: black;
+    font-size: 6vh;
+    font-weight: bold;
     padding-bottom: 0!important;
 }
+

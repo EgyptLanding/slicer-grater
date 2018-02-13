@@ -16,10 +16,13 @@ function showHide() {
     }
 }
 function showHideCounter() {
-
     if (document.getElementById) {
         $("#counters").fadeTo(500, 0, function () {
+        }).fadeTo(500, 1);
+    }
 
+    if (document.getElementById) {
+        $("#counters2").fadeTo(500, 0, function () {
         }).fadeTo(500, 1);
     }
 }

@@ -130,7 +130,7 @@ overflow-x: hidden;">
                    </div>
                 </div>
                 <div class="row">
-                    <h2  style="padding: 4%!important;"><b>Order now for only <b id="price">14 KWD </b> instead of <s style="color: red;">29</s> </b></h2>
+                    <h2  style="padding: 4%; padding-top: 0;"><b>Order now for only <b id="price">14 KWD </b> instead of <s style="color: red;">29</s> </b></h2>
                 </div>
             </div>
         </div>
@@ -401,7 +401,12 @@ overflow-x: hidden;">
             </div>
             <div class="row">
                 <div class="col-md-7 scrollpoint sp-effect1" id="firstOrderForm">
-                        <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-10" style="border: solid 2px gainsboro; border-radius: 25px;">
+                            <h1 style="padding-bottom: 10px;">Hurry up! Left only : <span id="counter2"></span></h1>
+                        </div>
+                    </div>
+                        <div class="form-group" style="padding-top: 2%;">
                             <label>Name <span style="color:red;">*</span></label>
                             <input type="text" class="form-control" placeholder="Your full name">
                         </div>
@@ -418,7 +423,7 @@ overflow-x: hidden;">
                         </div>
                     </div>
                 <div class="col-md-5 col-sm-12 scrollpoint sp-effect1" style="text-align: center;">
-                    <img  style="height: 80%; width: 90%; padding-left: 2%;"
+                    <img  style="height: 110%; width: 110%;"
                           src="assets/img/product1flippedtrans15.png" alt="">
                 </div>
             </div>
@@ -469,6 +474,8 @@ var x = setInterval(function() {
     // Display the result in the element with id="demo"
     document.getElementById("counter").innerHTML ="0"+ hours + " : <b style='color: red;'>"
         + minutes + " <span style='color: black;'>:</span> <span id='counters'>" + seconds + "</span></b> ";
+    document.getElementById("counter2").innerHTML ="0"+ hours + " : <b style='color: red;'>"
+        + minutes + " <span style='color: black;'>:</span> <span id='counters2'>" + seconds + "</span></b> ";
 
     // If the count down is finished, write some text
     if (distance < 0) {
