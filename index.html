@@ -22,8 +22,6 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.css">
-
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/mystyles.css">
 
@@ -123,13 +121,16 @@ overflow-x: hidden;">
             <div class="col-md-6 hurryUp" style="text-align: center;">
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8">
-                        <img src="assets/img/hurry.jpg" style="width: 60%; height: 60%;">
+                        <img src="assets/img/hurry1.jpg" style="width: 60%; height: 60%;">
                     </div>
                 </div>
                 <div class="row">
-                    <h2 style="color: black;"><b>ORDER NOW</b></h2>
-                    <h2><b> And pay only <b id="price">14 KWD </b> instead of <s style="color: red;">29</s> </b></h2>
-
+                   <div class="col-md-12">
+                       <p id="counter"></p>
+                   </div>
+                </div>
+                <div class="row">
+                    <h2><b>Order now for only <b id="price">14 KWD </b> instead of <s style="color: red;">29</s> </b></h2>
                 </div>
             </div>
         </div>
@@ -442,20 +443,39 @@ overflow-x: hidden;">
         appMaster.preLoader();
     });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
 <script>
-    $(window).load(function(){
-        Date.prototype.addHours= function(h){
-            this.setHours(this.getHours()+h);
+
+        Date.prototype.addHours= function(h) {
+            this.setHours(this.getHours() + h);
             return this;
         }
-        var timespan = countdown(new Date(), new Date().addHours(5),  countdown.SECONDS);
-        var clock = $('.your-clock').FlipClock(timespan.seconds, {
-            countdown:true,
-            clockFace: 'HourlyCounter'
-        });
-    })
+// Set the date we're counting down to
+var countDownDate = new Date().addHours(5);
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in the element with id="demo"
+    document.getElementById("counter").innerHTML ="0"+ hours + " : <b style='color: red;'>"
+        + minutes + " <span style='color: black;'>:</span> <span id='counters'>" + seconds + "</span></b> ";
+
+    // If the count down is finished, write some text
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("counter").innerHTML = "EXPIRED";
+    }
+}, 1000);
 </script>
 <script type="text/javascript" src="assets/js/myjs.js"></script>
 </body>
