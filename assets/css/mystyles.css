@@ -16,11 +16,16 @@ body{
 }
 
 #price{
-    border:1px solid whitesmoke; padding:2px;color:blue;
+    padding:2px;
+    color:blue;
     margin: 3px;
-    margin-top: 4px;
-    background: whitesmoke;
     border-radius: 10px;
+}
+
+.sup {
+    position: relative;
+    bottom: 1ex;
+    font-size: 80%;
 }
 
 
@@ -323,3 +328,8 @@ body{
     padding-bottom: 0!important;
 }
 
+@media screen and (max-width: 480px) {
+    #hurryUp {
+        margin-left: 17px;
+    }
+}
