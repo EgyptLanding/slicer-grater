@@ -26,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         exit();
     }else{
         $_SESSION['ERROR'] = $ERROR;
-        header("Location:/index.php?error=true&#firstOrderForm");
+        header("Location:/index.php?error=true&#firstOrderSec");
     }
 
 }elseif($_GET['error'] != 'true'){
