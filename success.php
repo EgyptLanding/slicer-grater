@@ -17,14 +17,6 @@
 <header>
     <nav class="navbar navbar-fixed-top myNavbar1 myNavbar2" style="background: lightblue;" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1">
-                    <span class="fa fa-bars fa-lg"></span>
-                </button>
-            </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
@@ -37,14 +29,14 @@
         </div>
         <!-- /.container-->
     </nav>
-    <div class="col-md-12" id="thankText">
+    <div class="col-md-12 col-sm-12" id="thankText">
         <h1>THANK YOU !</h1>
         <i class="fa fa-check fa-3x" style="color: greenyellow;"></i>
         <h2>Your order has been <span style="color: greenyellow;">successfully</span> done !<br/> Our call operator will get in touch with you soon.</h2>
     </div>
     <div class="row">
         <div class="col-md-offset-1 col-md-10 col-sm-12">
-            <div class="col-md-6 frame" style="font-weight:600; font-size: 3vh; ">
+            <div class="col-md-6  col-sm-12 frame" style="font-weight:600; font-size: 3vh; ">
                 <div class="row">
                     <div class="col-md-6">
                         <p>Order Information</p>
@@ -52,15 +44,15 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-2 col-xs-3">
                         Name<br/>Phone <br/> City<br/>Product<br/>Price
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-1 col-sm-2 col-xs-2">
                         <p>
                             :<br/>:<br/>:<br/>:<br/>:
                         </p>
                     </div>
-                    <div class="col-md-6" style="color:blue ;">
+                    <div class="col-md-6 col-sm-6 col-xs-6" style="color:blue ;">
                         <p>
                             <?=$_SESSION['POST']['name']?><br/>
                             <?=$_SESSION['POST']['phone']?><br/>
@@ -77,8 +69,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6" style="text-align: right;">
-                <img style="height: 70%; width: 70%;"
+            <div class="col-md-6" style="text-align: center;">
+                <img style="height: 70%; width: 75%;"
                      src="assets/img/product1flippedtrans53.png">
             </div>
         </div>

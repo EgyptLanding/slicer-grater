@@ -13,10 +13,12 @@ body{
     font-weight: 800;
 }
 
+
 .frame{
     border: 3px solid lightgray;
     padding: 25px;
     border-radius: 10px;
+
 }
 
 .img-responsive{
@@ -150,6 +152,12 @@ body{
     #orderNav{
         color: black !important;
     }
+    #thankText>h1{
+        padding-top: 30px;
+    }
+    .frame{
+        margin: 10px;
+    }
     #mainSlide{
         height: 100%;
         width: 100%;
@@ -193,6 +201,7 @@ body{
         text-align: center;
         font-weight: 600;
     }
+
 
 
     .img-responsive{
