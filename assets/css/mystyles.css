@@ -2,6 +2,23 @@ body{
     overflow-x: hidden;
 }
 
+.error{
+    color: red;
+}
+
+#thankText{
+    text-align: center;
+}
+#thankText>h1{
+    font-weight: 800;
+}
+
+.frame{
+    border: 3px solid lightgray;
+    padding: 25px;
+    border-radius: 10px;
+}
+
 .img-responsive{
     border-radius: 5px;
     border: 5px solid whitesmoke;

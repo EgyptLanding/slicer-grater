@@ -1,3 +1,38 @@
+<?php
+    session_start();
+
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    // form validation :
+    $name  = htmlspecialchars($_POST['name']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $city  = htmlspecialchars($_POST['city']);
+    $ERROR = [];
+
+    if(strlen(trim($name))< 3 || strlen(trim($name)) > 32){
+        $ERROR['name'] = '* Name must be between 3 and 32 characters';
+    }
+    if(strlen(trim($phone)) < 12){
+        $ERROR['phone'] = '* Please enter a valid phone number';
+    }
+    if(strlen($city)< 3 || strlen($city) > 32){
+        $ERROR['city'] ='* City must be between 3 and 32 characters';
+    }
+
+    $_SESSION['POST']  = $_POST;
+
+    if(empty($ERROR)){
+        unset($_SESSION['ERROR']);
+        header("Location:/success.php");
+        exit();
+    }else{
+        $_SESSION['ERROR'] = $ERROR;
+        header("Location:/index.php?error=true&#firstOrderForm");
+    }
+
+}elseif($_GET['error'] != 'true'){
+    unset($_SESSION['ERROR']);
+}
+?>
 <!doctype html>
 <!--[if lt IE 7]>
 <html lang="en" class="no-js ie6"><![endif]-->
@@ -24,7 +59,6 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/mystyles.css">
-
 
 </head>
 
@@ -102,21 +136,29 @@ overflow-x: hidden;">
         </div>
         <div class="row wrap" >
             <div class="col-md-6 firstForm" id="firstOrderForm">
+                <form action="index.php" method="post">
                     <div class="form-group">
                         <label>Name <span style="color:red;">*</span></label>
-                        <input type="text" class="form-control" placeholder="Your full name">
+                        <input type="text" name="name" class="form-control" placeholder="Your full name"
+                        value="<?=$_SESSION['POST']['name']?>">
+                        <label class="error"><?php echo($_SESSION['ERROR']['name']);?></label>
                     </div>
                     <div class="form-group">
                         <label>Phone <span style="color:red;">*</span></label>
-                        <input type="Phone" class="form-control" placeholder="Your mobile number">
+                        <input name="phone" type="Phone" class="form-control" placeholder="+ 965  - - -   - - -   - -  "
+                               value="<?=$_SESSION['POST']['phone']?>" >
+                        <label class="error"><?php echo($_SESSION['ERROR']['phone']);?></label>
                     </div>
                     <div class="form-group" style="overflow-y: hidden;">
                         <label>City <span style="color:red;">*</span></label>
-                        <textarea class="form-control" rows="2" placeholder="Your city"></textarea>
+                        <textarea name="city" class="form-control" rows="2" placeholder="Your city"
+                                  ><?=$_SESSION['POST']['city']?></textarea>
+                        <label class="error"><?php echo($_SESSION['ERROR']['city']);?></label>
                     </div>
                     <div class="form-group"  >
                         <input style="border-color:white; font-weight: bold; " type="submit" value="ORDER NOW" class="btn btn-lg btn-block btn-info">
                     </div>
+                </form>
             </div>
             <div class="col-md-6 hurryUp" style="text-align: center;">
                 <div class="row">
@@ -135,8 +177,8 @@ overflow-x: hidden;">
                             <br/>
                             <b id="price">13<span class=sup>99</span>
                             <span style="font-size: large;">KWD </span>
-                        </b>
-                        instead of
+                            </b>
+                            <span style="color: black;">instead of</span>
                         <s style="color: red;">29</s> </b>
                     </h2>
                 </div>
