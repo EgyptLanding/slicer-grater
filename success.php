@@ -65,7 +65,7 @@
                     <div class="col-md-6">
                         <br/>
                         <a href="index.php" class="btn btn-lg btn-success">Main page</a>
-                        <a href="#" class="btn btn-lg btn-primary">Edit form</a>
+                        <a href="index.php#firstOrderSec" class="btn btn-lg btn-primary">Edit form</a>
                     </div>
                 </div>
             </div>
@@ -80,4 +80,72 @@
 </html>
 <?php
     // message order has been done:
+$chatId   = '-317829285';
+$botToken = '532739101:AAHJDMB3DaZD7IkUL9R9riNvXlFdmeobF9Y';
+$website="https://api.telegram.org/bot".$botToken;
+$orderNum = file_get_contents('orders.txt');
+$msg  = 'order number : '.$orderNum;
+$msg .= '
+Name : '.$_SESSION['POST']['name'];
+$msg .= '
+Phone : '.$_SESSION['POST']['phone'];
+$msg .= '
+City : '.$_SESSION['POST']['city'];
+//Receiver Chat Id
+$params=[
+    'chat_id'=>$chatId,
+    'text'=>$msg,
+];
+$ch = curl_init($website . '/sendMessage');
+curl_setopt($ch, CURLOPT_HEADER, false);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, ($params));
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+$result = curl_exec($ch);
+curl_close($ch);
+
+// order number +1 :
+$orderNum += 1 ;
+file_put_contents('orders.txt',$orderNum);
 ?>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter47150160 = new Ya.Metrika({
+                    id:47150160,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/47150160" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Facebook Pixel Code -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110380101-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110380101-2');
+</script>
+<!-- end of google analysi-->
